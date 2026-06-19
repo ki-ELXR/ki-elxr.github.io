@@ -25,7 +25,7 @@ published: true
 
 
 <div class="pswp-gallery pswp-gallery--single-column">
-  <a href="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh=s300" data-lightbox="roadtrip" id="bombay1>
+  <a href="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh=s300" data-lightbox="roadtrip" id="bombay1">
   <img src="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh" />
   </a>
   <a href="https://lh3.googleusercontent.com/d/1UGiOT9R8DMfUN7aZgX7HtyuBuBEyYgMc=s300" data-lightbox="roadtrip" id="bombay2">
@@ -47,9 +47,19 @@ published: true
   <img src="https://lh3.googleusercontent.com/d/1KtY8E-ZE_9VxX5uwus4sYEHfNFQcC-_8=s500" />
   </a>
 </div>
-https://drive.google.com/file/d/1KtY8E-ZE_9VxX5uwus4sYEHfNFQcC-_8/view?usp=sharing
 
----
+<div class="pswp-gallery pswp-gallery--single-column">
+  <a href="https://lh3.googleusercontent.com/d/1a6xTBCHDXHKs3B32g2V0-hg7Cfe5qZYH=s300" data-lightbox="roadtrip" id="portfolio-5">
+  <img src="https://lh3.googleusercontent.com/d/1a6xTBCHDXHKs3B32g2V0-hg7Cfe5qZYH" />
+  </a>
+  <a href="https://lh3.googleusercontent.com/d/1Y7hr8zvguUyYY0MaItMCfkEtROCMGDCI=s200" data-lightbox="roadtrip" id="portfolio-8">
+  <img src="https://lh3.googleusercontent.com/d/1Y7hr8zvguUyYY0MaItMCfkEtROCMGDCI=s200" />
+  </a>
+  <a href="https://lh3.googleusercontent.com/d/1DyWvS-R6jozlPBwJgYIwIhPbRQDq_E3s=s400" data-lightbox="roadtrip" id="portfolio-9">
+  <img src="https://lh3.googleusercontent.com/d/1DyWvS-R6jozlPBwJgYIwIhPbRQDq_E3s=s500" />
+  </a>
+</div>
+https://drive.google.com/file/d//view?usp=sharing
 
 
 ---
@@ -76,8 +86,8 @@ https://drive.google.com/file/d/1KtY8E-ZE_9VxX5uwus4sYEHfNFQcC-_8/view?usp=shari
 </div>
 <!-- Group 2 -->
 <div class="spotlight-group">
-    <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/4/img-2500.jpg">
-        <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/4/img-200.jpg" />
+    <a class="spotlight" href="https://lh3.googleusercontent.com/d/1a6xTBCHDXHKs3B32g2V0-hg7Cfe5qZYH=s300">
+        <img src="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh=s300" />
     </a>
     <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-2500.jpg">
         <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-200.jpg" />
