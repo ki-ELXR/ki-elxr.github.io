@@ -17,13 +17,15 @@ images:
 published: true
 ---
 
+https://drive.google.com/file/d//view?usp=drive_link
 
-https://drive.google.com/file/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh/view?usp=sharing
+
+
 The images in this post are all zoomable, arranged into different mini-galleries using different libraries.
 
 ## [Lightbox2](https://lokeshdhakar.com/projects/lightbox2/)
 
-<a href="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh=w2500" data-lightbox="roadtrip"><img src="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh=w2500" /></a>
+<a href="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh" data-lightbox="roadtrip"><img src="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh" /></a>
 <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" /></a>
 <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" /></a>
 
@@ -32,19 +34,19 @@ The images in this post are all zoomable, arranged into different mini-galleries
 ## [PhotoSwipe](https://photoswipe.com/)
 
 <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
-  <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg"
+  <a href="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh"
     data-pswp-width="1669"
     data-pswp-height="2500"
     target="_blank">
-    <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" alt="" />
+    <img src="https://lh3.googleusercontent.com/d.1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh" alt="" />
   </a>
   <!-- cropped thumbnail: -->
-  <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-2500.jpg"
+  <a href="https://lh3.googleusercontent.com/d/1UGiOT9R8DMfUN7aZgX7HtyuBuBEyYgMc"
     data-pswp-width="1875"
     data-pswp-height="2500"
     data-cropped="true"
     target="_blank">
-    <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-200.jpg" alt="" />
+    <img src="https://lh3.googleusercontent.com/d/1UGiOT9R8DMfUN7aZgX7HtyuBuBEyYgMc" alt="" />
   </a>
   <!-- data-pswp-src with custom URL in href -->
   <a href="https://unsplash.com"
