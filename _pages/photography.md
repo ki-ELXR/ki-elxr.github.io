@@ -21,8 +21,6 @@ published: true
 
 ---
 
-## Gallery
-
 
 <div class="pswp-gallery pswp-gallery--single-column">
   <a href="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh" data-lightbox="roadtrip" id="bombay1">
@@ -49,57 +47,14 @@ published: true
 </div>
 
 <div class="pswp-gallery pswp-gallery--single-column">
-  <a href="https://lh3.googleusercontent.com/d/1a6xTBCHDXHKs3B32g2V0-hg7Cfe5qZYH=s300" data-lightbox="roadtrip" id="portfolio-5">
+  <a href="https://lh3.googleusercontent.com/d/1a6xTBCHDXHKs3B32g2V0-hg7Cfe5qZYH=s300" data-lightbox="roadtrip" id="">
   <img src="https://lh3.googleusercontent.com/d/1a6xTBCHDXHKs3B32g2V0-hg7Cfe5qZYH" />
   </a>
-  <a href="https://lh3.googleusercontent.com/d/1Y7hr8zvguUyYY0MaItMCfkEtROCMGDCI=s200" data-lightbox="roadtrip" id="portfolio-8">
-  <img src="https://lh3.googleusercontent.com/d/1Y7hr8zvguUyYY0MaItMCfkEtROCMGDCI=s200" />
-  </a>
-  <a href="https://lh3.googleusercontent.com/d/1DyWvS-R6jozlPBwJgYIwIhPbRQDq_E3s=s400" data-lightbox="roadtrip" id="portfolio-9">
-  <img src="https://lh3.googleusercontent.com/d/1DyWvS-R6jozlPBwJgYIwIhPbRQDq_E3s=s500" />
+
   </a>
 </div>
-https://drive.google.com/file/d//view?usp=sharing
 
 
----
-
-## [Lightbox2](https://lokeshdhakar.com/projects/lightbox2/)
-
-<a href="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh=s300" data-lightbox="roadtrip"><img src="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh=s300" /></a>
-<a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" /></a>
-<a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" /></a>
-
-## [Spotlight JS](https://nextapps-de.github.io/spotlight/)
-
-<!-- Group 1 -->
-<div class="spotlight-group">
-    <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg">
-        <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg" />
-    </a>
-    <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg">
-        <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" />
-    </a>
-    <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg">
-        <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" />
-    </a>
-</div>
-<!-- Group 2 -->
-<div class="spotlight-group">
-    <a class="spotlight" href="https://lh3.googleusercontent.com/d/1a6xTBCHDXHKs3B32g2V0-hg7Cfe5qZYH=s300">
-        <img src="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh=s300" />
-    </a>
-    <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-2500.jpg">
-        <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-200.jpg" />
-    </a>
-    <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg">
-        <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg" />
-    </a>
-</div>
-
----
-
-## [Venobox](https://veno.es/venobox/)
 
 <div class="venobox-group">
   <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh" id="bombay1">
@@ -116,15 +71,34 @@ https://drive.google.com/file/d//view?usp=sharing
   </a>
 </div>
 
-<a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1ozXzWpnOuKwNjfpt7qCrnfVnWMXE4Fxn" id="ike1">
-<img src="https://lh3.googleusercontent.com/d/1ozXzWpnOuKwNjfpt7qCrnfVnWMXE4Fxn=s400"  />
-</a>
+<div class="venobox-group">
+  <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1ozXzWpnOuKwNjfpt7qCrnfVnWMXE4Fxn" id="ike1">
+  <img src="https://lh3.googleusercontent.com/d/1ozXzWpnOuKwNjfpt7qCrnfVnWMXE4Fxn=s400"  />
+  </a>
 
-<a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1o44bPwmntjYR0mNqaEK2XcQxCsdee5IQ" id="ike2">
-<img src="https://lh3.googleusercontent.com/d/1o44bPwmntjYR0mNqaEK2XcQxCsdee5IQ=s400"  />
-</a>
+  <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1o44bPwmntjYR0mNqaEK2XcQxCsdee5IQ" id="ike2">
+  <img src="https://lh3.googleusercontent.com/d/1o44bPwmntjYR0mNqaEK2XcQxCsdee5IQ=s400"  />
+  </a>
+</div>
+
+<div class="venobox-group">
+  <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1KtY8E-ZE_9VxX5uwus4sYEHfNFQcC-_8" id="oldtown1">
+  <img src="https://lh3.googleusercontent.com/d/1KtY8E-ZE_9VxX5uwus4sYEHfNFQcC-_8=s400"  />
+  </a>
+
+  <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1a6xTBCHDXHKs3B32g2V0-hg7Cfe5qZYH" id="portfolio-5">
+  <img src="https://lh3.googleusercontent.com/d/1a6xTBCHDXHKs3B32g2V0-hg7Cfe5qZYH=s400"  />
+  </a>
+</div>
+
+<div class="venobox-group">
+  <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1Y7hr8zvguUyYY0MaItMCfkEtROCMGDCI" id="portfolio-8">
+  <img src="https://lh3.googleusercontent.com/d/1Y7hr8zvguUyYY0MaItMCfkEtROCMGDCI=s400"  />
+  </a>
+
+  <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1DyWvS-R6jozlPBwJgYIwIhPbRQDq_E3s" id="portfolio-9">
+  <img src="https://lh3.googleusercontent.com/d/1DyWvS-R6jozlPBwJgYIwIhPbRQDq_E3s=s400"  />
+  </a>
+</div>
 
 
-<a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1KtY8E-ZE_9VxX5uwus4sYEHfNFQcC-_8" id="oldtown1">
-<img src="https://lh3.googleusercontent.com/d/1KtY8E-ZE_9VxX5uwus4sYEHfNFQcC-_8=s400"  />
-</a>
