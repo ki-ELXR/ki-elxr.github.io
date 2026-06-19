@@ -3,7 +3,7 @@ layout: post
 title: Watercolor emulations
 date: 2026-05-17 09:30:00
 description: Implementing KYND's watercolor emulation in openframeworks.
-tags: c++ webgl art graphics openframeowkrs
+tags: c++ webgl art graphics openframeworks
 categories: posts projects
 featured: true
 giscus_comments: true
