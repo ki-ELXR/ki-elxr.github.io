@@ -191,9 +191,9 @@ Module["expectedDataFileDownloads"]++;
         for (var i = 0; i < files.length; ++i) {
           DataRequest.prototype.requests[files[i].filename].onload();
         }
-        Module["removeRunDependency"]("datafile_bin/em/emscriptenExportApp/index.data");
+        Module["removeRunDependency"]("index.data");
       }
-      Module["addRunDependency"]("datafile_bin/em/emscriptenExportApp/index.data");
+      Module["addRunDependency"]("index.data");
       Module["preloadResults"] ??= {};
       Module["preloadResults"][PACKAGE_NAME] = {
         fromCache: false
