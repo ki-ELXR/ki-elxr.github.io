@@ -164,6 +164,16 @@ body > #header .header-bar {
   }
 }
 
+.fa {
+  display: inline-block;
+  font:
+    normal normal normal 10pt/1 "FontAwesome",
+    sans-serif;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .dropdown-menu {
   font-family: sans-serif;
   font-size: 13pt;
@@ -424,6 +434,7 @@ h2,
 h3,
 h4,
 h5,
+h6,
 pre,
 code,
 form,
@@ -469,6 +480,26 @@ div.cell.selected:before {
   left: 0px;
   width: 0px;
   height: 100%;
+}
+
+div.prompt,
+.prompt {
+  font-family: monospace, monospace;
+  font-size: 9pt !important;
+  font-weight: normal;
+  color: #75715e;
+  line-height: 170%;
+  padding: 0px;
+  padding-top: 4px;
+  padding-left: 0px;
+  padding-right: 1px;
+  text-align: right !important;
+  min-width: 11.5ex !important;
+  width: 11.5ex !important;
+}
+
+div.cell.selected .prompt {
+  top: 0;
 }
 
 pre,
@@ -572,7 +603,7 @@ input.raw_input {
   box-shadow: none;
 }
 
-
+audio,
 video {
   display: inline;
   vertical-align: middle;
