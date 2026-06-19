@@ -1,16 +1,13 @@
 ---
-layout: page
+layout: post
 title: Islamic Patterns
+date: 2025-04-30 09:30:00
 description: A implementation in C++ and Web Assembly
-img: assets/img/islamicpatterns_static_1.jpg
-importance: 1
-category: Creative Coding
-related_publications: false
-hidden: false
+tags: c++ webgl art graphics
+categories: posts projects
+featured: true
+giscus_comments: true
 ---
-
-<!-- Note that collections: projects: output needs to be set to true in _config.yml
-also, this is a separate post from the blog posts.  -->
 
 I traveled with my family to Spain in late 2024 and I was enamored with the art and architecture. More than the Christian/Catholic motifs which emphasized tangible humans and figures of Christ I was particularly interested in the Islamic designs which were subtle, and abstract. There was a kind of mathematical elegance to them, with a simple base but extrapolated with complexity.
 
@@ -46,5 +43,6 @@ The Islamic Patterns are generated using a "Hankin Algorithm" which takes a regu
 
 Eventually I'd like to have the option to change the tiling pattern to any n-sided regular polygon, and perhaps add a neon effect by changing the fragment shader. The patterns are endless…
 
-日本語：
-イスラミックパターンは「ハンキンアルゴリズム」を使って作られます。このアルゴリズムでは、正方形のような正多角形の各辺の中点から2本の「ハンキンベクトル」を伸ばし、それらが他のハンキンベクトルと交わるまで延長します。これを全ての辺で繰り返し、最後に全体をグリッド状に繰り返します。ハンキンベクトルの長さは、正弦法則と正多角形の内角を使って計算されます。。。
+## 日本語
+
+イスラミックパターンは「ハンキンアルゴリズム」を使って作られます。このアルゴリズムでは、正方形のような正多角形の各辺の中点から2本の「ハンキンベクトル」を伸ばし、それらが他のハンキンベクトルと交わるまで延長します。これを全ての辺で繰り返し、最後に全体をグリッド状に繰り返します。ハンキンベクトルの長さは、正弦法則と正多角形の内角を使って計算されます。。。。。。
