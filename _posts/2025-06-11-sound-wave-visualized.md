@@ -45,8 +45,3 @@ I suppose it is more a compliment to 3blue1brown’s work and how he is able to 
 - <a href="https://www.sciencejournalforkids.org/articles/will-artificial-trees-be-the-next-power-plants/" style="color:var(--global-theme-color)">Science Journals for Kids Article</a>
 - <a href="https://phys.libretexts.org/Bookshelves/University_Physics/University_Physics_(OpenStax)/Book%3A_University_Physics_I_-_Mechanics_Sound_Oscillations_and_Waves_(OpenStax)/17%3A_Sound/17.03%3A_Speed_of_Sound" style="color:var(--global-theme-color)">Speed of Sound Equation and Speeds for Various Media</a>
 
-https://www.sciencejournalforkids.org/
-
-https://www.sciencejournalforkids.org/articles/how-is-the-ice-in-greenland-melting/
-
-https://docs.sunfounder.com/projects/davinci-kit/en/latest/index.html

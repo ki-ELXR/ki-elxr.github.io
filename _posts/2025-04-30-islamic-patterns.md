@@ -43,6 +43,3 @@ The Islamic Patterns are generated using a "Hankin Algorithm" which takes a regu
 
 Eventually I'd like to have the option to change the tiling pattern to any n-sided regular polygon, and perhaps add a neon effect by changing the fragment shader. The patterns are endless…
 
-## 日本語
-
-イスラミックパターンは「ハンキンアルゴリズム」を使って作られます。このアルゴリズムでは、正方形のような正多角形の各辺の中点から2本の「ハンキンベクトル」を伸ばし、それらが他のハンキンベクトルと交わるまで延長します。これを全ての辺で繰り返し、最後に全体をグリッド状に繰り返します。ハンキンベクトルの長さは、正弦法則と正多角形の内角を使って計算されます。。。。。。

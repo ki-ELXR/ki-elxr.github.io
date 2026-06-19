@@ -34,11 +34,11 @@ The images in this post are all zoomable, arranged into different mini-galleries
 ## [PhotoSwipe](https://photoswipe.com/)
 
 <div class="pswp-gallery pswp-gallery--single-column" id="bombay1">
-  <a href="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh"
+  <a href="https://drive.google.com/thumbnail?id=1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh"
     data-pswp-width="800"
     data-pswp-height="1200"
     target="_blank">
-    <img src="https://lh3.googleusercontent.com/d.1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh" alt="" />
+    <img src="https://drive.google.com/thumbnail?id=1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh" alt="" />
   </a>
   <!-- cropped thumbnail: -->
   <a href="https://lh3.googleusercontent.com/d/1UGiOT9R8DMfUN7aZgX7HtyuBuBEyYgMc"
