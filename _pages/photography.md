@@ -25,8 +25,8 @@ published: true
 
 
 <div class="pswp-gallery pswp-gallery--single-column">
-  <a href="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh=s300" data-lightbox="roadtrip" id="bombay1">
-  <img src="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh" />
+  <a href="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh" data-lightbox="roadtrip" id="bombay1">
+  <img src="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh=400" />
   </a>
   <a href="https://lh3.googleusercontent.com/d/1UGiOT9R8DMfUN7aZgX7HtyuBuBEyYgMc=s300" data-lightbox="roadtrip" id="bombay2">
   <img src="https://lh3.googleusercontent.com/d/1UGiOT9R8DMfUN7aZgX7HtyuBuBEyYgMc=s300" />
@@ -101,6 +101,6 @@ https://drive.google.com/file/d//view?usp=sharing
 
 ## [Venobox](https://veno.es/venobox/)
 
-<a class="venobox" data-gall="myGallery" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg" /></a>
-<a class="venobox" data-gall="myGallery" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" /></a>
+<a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh=s300"><img src="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh=s300" /></a>
+<a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh"><img src="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh=s400" /></a>
 <a class="venobox" data-gall="myGallery" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" /></a>
