@@ -1,6 +1,7 @@
 ---
-layout: post
-title: a post with image galleries
+layout: default
+permalink: /photography
+title: photography
 nav: true
 nav_order: 2
 date: 2024-12-04 01:59:00
