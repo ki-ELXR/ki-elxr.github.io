@@ -12,17 +12,17 @@ giscus_comments: true
 I traveled with my family to Spain in late 2024 and I was enamored with the art and architecture. More than the Christian/Catholic motifs which emphasized tangible humans and figures of Christ I was particularly interested in the Islamic designs which were subtle, and abstract. There was a kind of mathematical elegance to them, with a simple base but extrapolated with complexity.
 
 
-<div class="venobox-group">
-  <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/13NyVIUP-Qusyp72BH-fwDaJeSdUfJkGe" id="oldtown1">
-  <img src="https://lh3.googleusercontent.com/d/13NyVIUP-Qusyp72BH-fwDaJeSdUfJkGe=s300"  />
+<div class="venobox-group" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 15px;">
+  <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/13NyVIUP-Qusyp72BH-fwDaJeSdUfJkGe" id="alhambra_1">
+    <img src="https://lh3.googleusercontent.com/d/13NyVIUP-Qusyp72BH-fwDaJeSdUfJkGe=s300" />
   </a>
 
-  <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1SSlspWbk_AWCsYY53IefqD3stQXQ7nqa" id="portfolio-5">
-  <img src="https://lh3.googleusercontent.com/d/1SSlspWbk_AWCsYY53IefqD3stQXQ7nqa=s300"  />
+  <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1SSlspWbk_AWCsYY53IefqD3stQXQ7nqa" id="alhambra_2">
+    <img src="https://lh3.googleusercontent.com/d/1SSlspWbk_AWCsYY53IefqD3stQXQ7nqa=s300" />
   </a>
 
-  <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1O9wZmi0roHoAW8zyygbFcAU24upebSfD" id="portfolio-5">
-  <img src="https://lh3.googleusercontent.com/d/1O9wZmi0roHoAW8zyygbFcAU24upebSfD=s300"  />
+  <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1O9wZmi0roHoAW8zyygbFcAU24upebSfD" id="alhambra_3">
+    <img src="https://lh3.googleusercontent.com/d/1O9wZmi0roHoAW8zyygbFcAU24upebSfD=s300" />
   </a>
 </div>
 
