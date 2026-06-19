@@ -30,4 +30,4 @@ This works on desktop or mobile. Allow the website access to your camera and sta
 
 ## References
 
-- <a href="https://github.com/ki-ELXR/openFrameworks-learning/tree/mediapipe-web/mediapipeJS/src" style="color:var(--global-theme-color)">Link to Repo</a>
+- <a href="https://github.com/ki-ELXR/python-bodydetection-mediapipeshader" style="color:var(--global-theme-color)">Link to Repo</a>

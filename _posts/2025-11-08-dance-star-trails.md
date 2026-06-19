@@ -27,6 +27,6 @@ So what better way than to rebuild it myself from the ground up using Python! (I
 
 ## References
 
-- <a href="https://github.com/ki-ELXR/raspi-kaleidoscope/tree/bodypose_dance" style="color:var(--global-theme-color)">Link to Repo</a>
+<!-- - <a href="https://github.com/ki-ELXR/raspi-kaleidoscope/tree/bodypose_dance" style="color:var(--global-theme-color)">Link to Repo</a> -->
 - <a href="https://googlecreativelab.github.io/posenet-sketchbook/" style="color:var(--global-theme-color)">Maya Man's PoseNet Dance Artwork</a>
 - <a href="https://www.youtube.com/watch?v=vfNHdVbE-l4" style="color:var(--global-theme-color)">The Coding Train's Hand Pose Detection with ml5.js Tutorial</a>
