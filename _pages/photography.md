@@ -5,10 +5,10 @@ title: photography
 nav: true
 nav_order: 2
 date: 2024-12-04 01:59:00
-description: this is what included image galleries could look like
-tags: formatting images
+description: photography
+tags: photo images
 categories: sample-posts
-thumbnail: assets/img/9.jpg
+thumbnail: 
 images:
   lightbox2: true
   photoswipe: true
@@ -17,57 +17,35 @@ images:
 published: true
 ---
 
-https://drive.google.com/file/d//view?usp=drive_link
 
-
-
-The images in this post are all zoomable, arranged into different mini-galleries using different libraries.
-
-## [Lightbox2](https://lokeshdhakar.com/projects/lightbox2/)
-
-<a href="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh=s600" data-lightbox="roadtrip"><img src="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh=s600" /></a>
-<a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" /></a>
-<a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" /></a>
 
 ---
 
-## [PhotoSwipe](https://photoswipe.com/)
+## [gallery]
 
-<div class="pswp-gallery pswp-gallery--single-column" id="bombay1">
-  <a href="https://drive.google.com/uc?id=1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh"
-    data-pswp-width="800"
-    data-pswp-height="1200"
-    target="_blank">
-    <img src="https://drive.google.com/uc?id=1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh" alt="" />
+
+<div class="pswp-gallery pswp-gallery--single-column">
+  <a href="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh=s300" data-lightbox="roadtrip">
+  <img src="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh=s300" />
   </a>
-  <!-- cropped thumbnail: -->
-  <a href="https://lh3.googleusercontent.com/d/1UGiOT9R8DMfUN7aZgX7HtyuBuBEyYgMc"
-    data-pswp-width="600"
-    data-pswp-height="1000"
-    data-cropped="true"
-    target="_blank">
-    <img src="https://lh3.googleusercontent.com/d/1UGiOT9R8DMfUN7aZgX7HtyuBuBEyYgMc" alt="" />
+  <a href="https://lh3.googleusercontent.com/d/1UGiOT9R8DMfUN7aZgX7HtyuBuBEyYgMc=s300" data-lightbox="roadtrip" id="bombay2">
+  <img src="https://lh3.googleusercontent.com/d/1UGiOT9R8DMfUN7aZgX7HtyuBuBEyYgMc=s300" />
   </a>
-  <!-- data-pswp-src with custom URL in href -->
-  <a href="https://unsplash.com"
-    data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"
-    data-pswp-width="2500"
-    data-pswp-height="1666"
-    target="_blank">
-    <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt="" />
+  <a href="https://lh3.googleusercontent.com/d/1Y7w2WKmfG8P1eENiO7Ee0acNGXkcETSN=s300" data-lightbox="roadtrip" id="ikea1">
+  <img src="https://lh3.googleusercontent.com/d/1Y7w2WKmfG8P1eENiO7Ee0acNGXkcETSN=s300" />
   </a>
-  <!-- wrapped with any element: -->
-  <div>
-    <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg"
-      data-pswp-width="2500"
-      data-pswp-height="1667"
-      target="_blank">
-      <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg" alt="" />
-    </a>
-  </div>
 </div>
 
 ---
+
+
+---
+
+## [Lightbox2](https://lokeshdhakar.com/projects/lightbox2/)
+
+<a href="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh=s300" data-lightbox="roadtrip"><img src="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh=s300" /></a>
+<a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" /></a>
+<a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" /></a>
 
 ## [Spotlight JS](https://nextapps-de.github.io/spotlight/)
 
