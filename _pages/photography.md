@@ -35,15 +35,15 @@ The images in this post are all zoomable, arranged into different mini-galleries
 
 <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
   <a href="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh"
-    data-pswp-width="1669"
-    data-pswp-height="2500"
+    data-pswp-width="800"
+    data-pswp-height="1200"
     target="_blank">
     <img src="https://lh3.googleusercontent.com/d.1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh" alt="" />
   </a>
   <!-- cropped thumbnail: -->
   <a href="https://lh3.googleusercontent.com/d/1UGiOT9R8DMfUN7aZgX7HtyuBuBEyYgMc"
-    data-pswp-width="1875"
-    data-pswp-height="2500"
+    data-pswp-width="600"
+    data-pswp-height="1000"
     data-cropped="true"
     target="_blank">
     <img src="https://lh3.googleusercontent.com/d/1UGiOT9R8DMfUN7aZgX7HtyuBuBEyYgMc" alt="" />
