@@ -22,6 +22,24 @@ I traveled with my family to Spain in late 2024 and I was enamored with the art 
         {% include figure.liquid loading="eager" path="assets/img/alhambra_3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <div class="embed-responsive embed-responsive-16by9 rounded z-depth-1">
+            <iframe src="https://drive.google.com/file/d/13NyVIUP-Qusyp72BH-fwDaJeSdUfJkGe/preview" class="embed-responsive-item" style="border:0;" allow="autoplay"></iframe>
+        </div>
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <div class="embed-responsive embed-responsive-16by9 rounded z-depth-1">
+            <iframe src="https://drive.google.com/file/d/1SSlspWbk_AWCsYY53IefqD3stQXQ7nqa/preview" class="embed-responsive-item" style="border:0;" allow="autoplay"></iframe>
+        </div>
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <div class="embed-responsive embed-responsive-16by9 rounded z-depth-1">
+            <iframe src="https://drive.google.com/file/d/1O9wZmi0roHoAW8zyygbFcAU24upebSfD/preview" class="embed-responsive-item" style="border:0;" allow="autoplay"></iframe>
+        </div>
+    </div>
+</div>
 <div class="caption">
     Some of the Islamic Architectural Motifs I saw at the Alhambra in Granada, Spain.
 </div>
