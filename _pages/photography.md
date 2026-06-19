@@ -25,7 +25,7 @@ The images in this post are all zoomable, arranged into different mini-galleries
 
 ## [Lightbox2](https://lokeshdhakar.com/projects/lightbox2/)
 
-<a href="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh" data-lightbox="roadtrip"><img src="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh" /></a>
+<a href="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh=s600" data-lightbox="roadtrip"><img src="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh=s600" /></a>
 <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" /></a>
 <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" /></a>
 
