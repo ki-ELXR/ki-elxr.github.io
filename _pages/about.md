@@ -3,7 +3,7 @@ layout: about
 title: about
 nav: true
 permalink: /about/
-subtitle: Programming. Engineering. 日本語.
+subtitle: 
 # subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 # profile:
