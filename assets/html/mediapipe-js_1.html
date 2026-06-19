@@ -1,0 +1,474 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pose Tracking with Recording</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        background: #000000;
+        font-family: Arial, sans-serif;
+        color: #eee;
+      }
+      #container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      h1 {
+        text-align: center;
+        color: #00ff33;
+      }
+      #video-container {
+        position: relative;
+        width: 100%;
+        max-width: 640px;
+        aspect-ratio: 4/3;
+        margin: 20px auto;
+        background: #000;
+        border: 2px solid #00ff33;
+      }
+      #webcam {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      #canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+
+      @media (max-width: 700px) {
+        #video-container {
+          width: calc(100% - 40px);
+          margin: 20px 20px;
+        }
+      }
+      #status {
+        text-align: center;
+        padding: 10px;
+        background: #111;
+        border-radius: 5px;
+        margin: 20px auto;
+        max-width: 600px;
+      }
+      .info {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 14px;
+        color: #00ff33;
+      }
+      #performance {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 12px;
+        color: #888;
+      }
+      #controls {
+        text-align: center;
+        margin: 20px auto;
+        max-width: 600px;
+      }
+      #controls button {
+        background: #00ff33;
+        color: #000;
+        border: none;
+        padding: 12px 24px;
+        margin: 5px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      @media (max-width: 480px) {
+        #controls button {
+          padding: 10px 16px;
+          font-size: 14px;
+        }
+        #recTime {
+          display: block;
+          margin-top: 10px;
+        }
+      }
+      #controls button:hover {
+        background: #00cc29;
+      }
+      #controls button:disabled {
+        background: #333;
+        color: #666;
+        cursor: not-allowed;
+      }
+      #controls button.recording {
+        background: #ff3333;
+        animation: pulse 1s infinite;
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.7;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <!-- <h1>Pose Tracking with Recording</h1> -->
+
+      <div id="video-container">
+        <video id="webcam" autoplay playsinline></video>
+        <canvas id="canvas" style="background: transparent"></canvas>
+      </div>
+      <div id="status">Initializing...</div>
+      <div id="performance">FPS: --</div>
+
+      <div id="controls">
+        <button id="startRecBtn">Start Recording</button>
+        <button id="stopRecBtn" disabled>Stop Recording</button>
+        <span id="recTime" style="color: #00ff33; margin-left: 15px; font-size: 16px"></span>
+      </div>
+      <!-- <div class="info">
+            Pose tracking with video recording capability
+        </div> -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.js"></script>
+
+    <script>
+      let pose;
+      let camera;
+      let updatePoseLandmarksFunc = null;
+      let lastTime = Date.now();
+      let frameCount = 0;
+
+      // Recording variables
+      let mediaRecorder = null;
+      let recordedChunks = [];
+      let recordingStartTime = 0;
+      let recordingInterval = null;
+      let canvasStream = null;
+      let drawLoopId = null;
+
+      function initMediaPipe() {
+        console.log("Initializing MediaPipe Pose...");
+
+        pose = new Pose({
+          locateFile: (file) => {
+            return `https://cdn.jsdelivr.net/npm/@mediapipe/pose/${file}`;
+          },
+        });
+
+        pose.setOptions({
+          modelComplexity: 1,
+          smoothLandmarks: true,
+          enableSegmentation: false,
+          smoothSegmentation: false,
+          minDetectionConfidence: 0.5,
+          minTrackingConfidence: 0.5,
+        });
+
+        pose.onResults(onResults);
+
+        const videoElement = document.getElementById("webcam");
+        camera = new Camera(videoElement, {
+          onFrame: async () => {
+            await pose.send({ image: videoElement });
+          },
+          width: 640,
+          height: 480,
+        });
+
+        camera
+          .start()
+          .then(() => {
+            console.log("Camera started successfully");
+            if (typeof Module !== "undefined" && Module.setStatus) {
+              Module.setStatus("");
+            }
+          })
+          .catch((err) => {
+            console.error("Camera error:", err);
+          });
+      }
+
+      function onResults(results) {
+        frameCount++;
+        const now = Date.now();
+        if (now - lastTime >= 1000) {
+          document.getElementById("performance").textContent = `FPS: ${frameCount} (Processing)`;
+          frameCount = 0;
+          lastTime = now;
+        }
+
+        if (results.poseLandmarks && results.poseLandmarks.length > 0) {
+          try {
+            const landmarksData = results.poseLandmarks.map((lm) => ({
+              x: lm.x,
+              y: lm.y,
+              z: lm.z,
+              visibility: lm.visibility || 0,
+            }));
+
+            if (updatePoseLandmarksFunc) {
+              updatePoseLandmarksFunc(landmarksData);
+            }
+          } catch (e) {
+            console.error("Error updating landmarks:", e);
+          }
+        } else {
+          if (updatePoseLandmarksFunc) {
+            updatePoseLandmarksFunc([]);
+          }
+        }
+      }
+
+      // Recording functions
+      async function startRecording() {
+        try {
+          const canvas = document.getElementById("canvas");
+          const videoElement = document.getElementById("webcam");
+
+          // Verify video is playing
+          if (videoElement.paused || videoElement.readyState < 2) {
+            alert("Please wait for the webcam to load");
+            return;
+          }
+
+          console.log("Video dimensions:", videoElement.videoWidth, "x", videoElement.videoHeight);
+          console.log("Video ready state:", videoElement.readyState);
+
+          // Create composite canvas
+          const compositeCanvas = document.createElement("canvas");
+          compositeCanvas.width = 640;
+          compositeCanvas.height = 480;
+          const ctx = compositeCanvas.getContext("2d", { willReadFrequently: true });
+
+          // Draw initial frame BEFORE capturing stream
+          ctx.drawImage(videoElement, 0, 0, 640, 480);
+          ctx.drawImage(canvas, 0, 0, 640, 480);
+          console.log("Initial frame drawn");
+
+          // Capture the composite canvas as a stream at 30 FPS
+          // IMPORTANT: Must capture AFTER drawing first frame
+          const finalStream = compositeCanvas.captureStream(30);
+
+          // Set up continuous drawing function
+          function continuousDraw() {
+            // Draw the current webcam frame
+            ctx.clearRect(0, 0, 640, 480);
+            ctx.drawImage(videoElement, 0, 0, 640, 480);
+
+            // Draw the current openFrameworks canvas content (with its transparency)
+            // Use globalCompositeOperation to properly blend the transparent overlay
+            ctx.globalCompositeOperation = "source-over";
+            ctx.drawImage(canvas, 0, 0, 640, 480);
+
+            // Schedule the next draw
+            if (mediaRecorder && mediaRecorder.state === "recording") {
+              drawLoopId = requestAnimationFrame(continuousDraw);
+            }
+          }
+
+          // Verify stream has video track
+          const videoTracks = finalStream.getVideoTracks();
+          if (videoTracks.length === 0) {
+            alert("Failed to capture video stream");
+            return;
+          }
+          console.log("Video track settings:", videoTracks[0].getSettings());
+
+          // Setup MediaRecorder with better compatibility
+          let options = { mimeType: "video/webm;codecs=vp9", videoBitsPerSecond: 2500000 };
+          if (!MediaRecorder.isTypeSupported(options.mimeType)) {
+            options = { mimeType: "video/webm;codecs=vp8", videoBitsPerSecond: 2500000 };
+            if (!MediaRecorder.isTypeSupported(options.mimeType)) {
+              options = { mimeType: "video/webm", videoBitsPerSecond: 2500000 };
+            }
+          }
+
+          console.log("Using MIME type:", options.mimeType);
+
+          mediaRecorder = new MediaRecorder(finalStream, options);
+          recordedChunks = [];
+
+          mediaRecorder.onstart = () => {
+            console.log("MediaRecorder started, state:", mediaRecorder.state);
+            // Start the continuous drawing loop once recording actually starts
+            continuousDraw();
+          };
+
+          mediaRecorder.ondataavailable = (event) => {
+            console.log("Data available:", event.data.size, "bytes");
+            if (event.data.size > 0) {
+              recordedChunks.push(event.data);
+            }
+          };
+
+          mediaRecorder.onstop = () => {
+            console.log("Total chunks:", recordedChunks.length);
+            console.log(
+              "Total size:",
+              recordedChunks.reduce((acc, chunk) => acc + chunk.size, 0),
+              "bytes"
+            );
+
+            if (recordedChunks.length === 0) {
+              alert("Recording failed: no data captured. Try recording for at least 2 seconds.");
+              document.getElementById("recTime").textContent = "";
+              return;
+            }
+
+            const blob = new Blob(recordedChunks, { type: "video/webm" });
+            console.log("Blob size:", blob.size, "bytes");
+
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = `pose-recording-${Date.now()}.webm`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+
+            setTimeout(() => URL.revokeObjectURL(url), 100);
+
+            document.getElementById("recTime").textContent = "";
+          };
+
+          mediaRecorder.onerror = (event) => {
+            console.error("MediaRecorder error:", event);
+            alert("Recording error: " + event.error);
+          };
+
+          // Start recording with data collection every 1 second
+          mediaRecorder.start(1000);
+          recordingStartTime = Date.now();
+
+          // Update recording time
+          recordingInterval = setInterval(() => {
+            const elapsed = Math.floor((Date.now() - recordingStartTime) / 1000);
+            const mins = Math.floor(elapsed / 60);
+            const secs = elapsed % 60;
+            document.getElementById("recTime").textContent = `Recording: ${mins}:${secs.toString().padStart(2, "0")}`;
+          }, 1000);
+
+          // Update UI
+          document.getElementById("startRecBtn").disabled = true;
+          document.getElementById("stopRecBtn").disabled = false;
+          document.getElementById("stopRecBtn").classList.add("recording");
+
+          console.log("Recording started");
+        } catch (err) {
+          console.error("Error starting recording:", err);
+          alert("Failed to start recording: " + err.message);
+        }
+      }
+
+      function stopRecording() {
+        if (mediaRecorder && mediaRecorder.state === "recording") {
+          mediaRecorder.stop();
+          clearInterval(recordingInterval);
+
+          // Stop the continuous drawing loop
+          if (drawLoopId) {
+            cancelAnimationFrame(drawLoopId);
+            drawLoopId = null;
+          }
+
+          // Update UI
+          document.getElementById("startRecBtn").disabled = false;
+          document.getElementById("stopRecBtn").disabled = true;
+          document.getElementById("stopRecBtn").classList.remove("recording");
+
+          console.log("Recording stopped");
+        }
+      }
+
+      // Setup recording buttons
+      document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("startRecBtn").addEventListener("click", startRecording);
+        document.getElementById("stopRecBtn").addEventListener("click", stopRecording);
+      });
+    </script>
+
+    <script type="text/javascript">
+      var Module = {
+        preRun: [],
+        postRun: [],
+        print: function (text) {
+          console.log(text);
+        },
+        printErr: function (text) {
+          console.error(text);
+        },
+        canvas: (function () {
+          var canvas = document.getElementById("canvas");
+          canvas.width = 640;
+          canvas.height = 480;
+          canvas.addEventListener(
+            "webglcontextlost",
+            function (e) {
+              alert("WebGL context lost. You will need to reload the page.");
+              e.preventDefault();
+            },
+            false
+          );
+          return canvas;
+        })(),
+        webglContextAttributes: {
+          alpha: true,
+          premultipliedAlpha: false,
+          preserveDrawingBuffer: true,
+          antialias: true,
+          powerPreference: "high-performance",
+        },
+        setStatus: function (text) {
+          if (text) {
+            document.getElementById("status").textContent = text;
+            console.log("Status:", text);
+          }
+        },
+        totalDependencies: 0,
+        monitorRunDependencies: function (left) {
+          this.totalDependencies = Math.max(this.totalDependencies, left);
+          Module.setStatus(left ? "Preparing... (" + (this.totalDependencies - left) + "/" + this.totalDependencies + ")" : "Ready");
+        },
+        onRuntimeInitialized: function () {
+          console.log("Runtime initialized!");
+          setTimeout(function () {
+            if (typeof Module.updatePoseLandmarks === "function") {
+              console.log("✓ updatePoseLandmarks is available!");
+              updatePoseLandmarksFunc = Module.updatePoseLandmarks;
+              initMediaPipe();
+            } else {
+              console.error("✗ updatePoseLandmarks not found!");
+            }
+          }, 100);
+        },
+      };
+
+      Module.ctx = Module.canvas.getContext("webgl2", {
+        alpha: true,
+        premultipliedAlpha: false,
+        preserveDrawingBuffer: true,
+      });
+      Module.setStatus("Downloading...");
+
+      window.onerror = function (event) {
+        Module.setStatus("Exception thrown, see JavaScript console");
+        console.error("Error:", event);
+      };
+    </script>
+
+    <script async type="text/javascript" src="/assets/js/mediapipe-js_1.js"></script>
+  </body>
+</html>

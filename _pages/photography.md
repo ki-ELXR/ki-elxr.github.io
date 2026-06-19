@@ -33,7 +33,7 @@ The images in this post are all zoomable, arranged into different mini-galleries
 
 ## [PhotoSwipe](https://photoswipe.com/)
 
-<div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+<div class="pswp-gallery pswp-gallery--single-column" id="bombay1">
   <a href="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh"
     data-pswp-width="800"
     data-pswp-height="1200"
