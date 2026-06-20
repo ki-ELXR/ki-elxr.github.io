@@ -9,22 +9,6 @@ featured: true
 giscus_comments: true
 ---
 
-I 
-
-### Example of Sub-Heading 1
-
-
-
-
-
-
-<div class="caption">
-    Some of the Islamic Architectural Motifs I saw at the Alhambra in Granada, Spain.
-</div>
-
-I remember obsessively reading about creating these Islamic patterns on the trains to and from Toledo, when I stumbled the work of Craig Kaplan, who was doing research on algorithmically generating these patterns in code.
-
-The Coding Train did a wonderful video tutorial on how to implement Craig Kaplan's research in Javascript. This is an implementation of their work; here I reimplemented it in C++ and WebGL/WebAssembly. It was not trivial; it was an interesting exercise to reinvent p5's line draw calls in native C++.
 
 <div class="l-page">
   <iframe src="{{ '/assets/em/em-watercolorEmulation/index.html' | relative_url }}" frameborder='0' scrolling='no' height="500px" width="100%" style="border: 1px dashed grey;"></iframe>
