@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
       );
     },
   };
-
+  window.Module = Module; // Expose to console
   Module.setStatus("Downloading...");
   window.onerror = (text) => {
     console.log("onerror text:", text);
