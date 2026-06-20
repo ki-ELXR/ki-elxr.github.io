@@ -34,7 +34,7 @@ Group all the photos together in rows. Vertical images can be a row of 3, while 
 
 
 
-<div class="venobox-group">
+<div class="venobox-group" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 15px;">
   <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh" id="bombay1">
   <img src="https://lh3.googleusercontent.com/d/1OsNLOGEBMGmOZkxp2qTVdSim_GDULxQh=s400"  />
   </a>
@@ -49,7 +49,7 @@ Group all the photos together in rows. Vertical images can be a row of 3, while 
   </a>
 </div>
 
-<div class="venobox-group">
+<div class="venobox-group" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 15px;">
   <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1ozXzWpnOuKwNjfpt7qCrnfVnWMXE4Fxn" id="ike1">
   <img src="https://lh3.googleusercontent.com/d/1ozXzWpnOuKwNjfpt7qCrnfVnWMXE4Fxn=s400"  />
   </a>
@@ -59,7 +59,7 @@ Group all the photos together in rows. Vertical images can be a row of 3, while 
   </a>
 </div>
 
-<div class="venobox-group">
+<div class="venobox-group" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 15px;">
   <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1KtY8E-ZE_9VxX5uwus4sYEHfNFQcC-_8" id="oldtown1">
   <img src="https://lh3.googleusercontent.com/d/1KtY8E-ZE_9VxX5uwus4sYEHfNFQcC-_8=s400"  />
   </a>
@@ -69,7 +69,7 @@ Group all the photos together in rows. Vertical images can be a row of 3, while 
   </a>
 </div>
 
-<div class="venobox-group">
+<div class="venobox-group" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 15px;">
   <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1Y7hr8zvguUyYY0MaItMCfkEtROCMGDCI" id="portfolio-8">
   <img src="https://lh3.googleusercontent.com/d/1Y7hr8zvguUyYY0MaItMCfkEtROCMGDCI=s400"  />
   </a>
@@ -79,7 +79,7 @@ Group all the photos together in rows. Vertical images can be a row of 3, while 
   </a>
 </div>
 
-<div class="venobox-group">
+<div class="venobox-group" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 15px;">
   <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1UViU9Czm5C4b4N9ioehtw3ujcTRoL4N1" id="portfolio-10">
   <img src="https://lh3.googleusercontent.com/d/1UViU9Czm5C4b4N9ioehtw3ujcTRoL4N1=s400"  />
   </a>
@@ -89,7 +89,7 @@ Group all the photos together in rows. Vertical images can be a row of 3, while 
   </a>
 </div>
 
-<div class="venobox-group">
+<div class="venobox-group" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 15px;">
   <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1sN8MmEgV9wAVoWRODTPc1hHQmK6LMt9g" id="portfolio-14">
   <img src="https://lh3.googleusercontent.com/d/1sN8MmEgV9wAVoWRODTPc1hHQmK6LMt9g=s400"  />
   </a>
@@ -98,3 +98,35 @@ Group all the photos together in rows. Vertical images can be a row of 3, while 
   <img src="https://lh3.googleusercontent.com/d/1crlqxtRdVCrKmigVYPvbt_Hi54HHVJh1=s400"  />
   </a>
 </div>
+
+<div class="venobox-group" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 15px;">
+  <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1CwmE828EcX3xMvEBlw7D2rLr1RwHb9p0" id="NagataGorge_1">
+  <img src="https://lh3.googleusercontent.com/d/1CwmE828EcX3xMvEBlw7D2rLr1RwHb9p0=s400"  />
+  </a>
+
+  <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1QgBYHqw4RJ2kTEdLC6XhdvMkuGUkDkO7" id="Mochio-Sakura-2">
+  <img src="https://lh3.googleusercontent.com/d/1QgBYHqw4RJ2kTEdLC6XhdvMkuGUkDkO7=s400"  />
+  </a>
+</div>
+
+<div class="venobox-group" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 15px;">
+  <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/13Uaq9MeuVlOMbuxtEr5184BJhH65NuLb" id="Nonviolent Communication">
+  <img src="https://lh3.googleusercontent.com/d/13Uaq9MeuVlOMbuxtEr5184BJhH65NuLb=s400"  />
+  </a>
+
+  <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1mAoJlvoC-12DL82PgW47gEIa0yZ4hywG" id="bonchi-1">
+  <img src="https://lh3.googleusercontent.com/d/1mAoJlvoC-12DL82PgW47gEIa0yZ4hywG=s400"  />
+  </a>
+</div>
+
+<div class="venobox-group" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 15px;">
+  <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1SUr4dg2-DSx4W93S2T-ZpFX1_PZk3PlN" id="Mochio-Sakura-1">
+  <img src="https://lh3.googleusercontent.com/d/1SUr4dg2-DSx4W93S2T-ZpFX1_PZk3PlN=s400"  />
+  </a>
+
+  <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1wfxONsrDWuiHlFiQ5SHvlffSyv_cT3Tj" id="ikoma-1">
+  <img src="https://lh3.googleusercontent.com/d/1wfxONsrDWuiHlFiQ5SHvlffSyv_cT3Tj=s400"  />
+  </a>
+
+</div>
+

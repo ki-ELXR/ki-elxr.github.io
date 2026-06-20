@@ -29,9 +29,9 @@ I was personally excited at the mini-project. They were trying to use an analog 
 
 After a weekend afternoon or so of troubleshooting, I wasn’t able to get any reading (the output value was just 128, which is half the max analog value that gets read). Turns out the problem was the connection - the ML8511 was sitting on header pins that are plugged into the breadboard, and those pins needed to be soldered. Another piece of luck - I asked around and one of the chemistry teachers had a soldering kit at the school. I bought the kit home, watched some Youtube Videos to refresh memory (I had only soldered once, back in my very first job), and did it after school that same day.
 
-<div class="row">
+<div class="row" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 15px;">
     <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1fDtJtHpk79KOf20WPBAEvAUdICHG-Fu5" id="ML8511_UVSensor_Solder_2">
-        <img src="https://lh3.googleusercontent.com/d/1fDtJtHpk79KOf20WPBAEvAUdICHG-Fu5=s300" />
+        <img src="https://lh3.googleusercontent.com/d/1fDtJtHpk79KOf20WPBAEvAUdICHG-Fu5=s500" />
     </a>
 </div>
 <div class="caption">
@@ -42,22 +42,22 @@ And the last piece of luck - one of the biology teachers had a UV fluorescent la
 
 A few things of note: the value of the ADC0834 is 8 bits so it can output a value anywhere from 0 - 256 (2^8). There are no units and the values need to be converted to a real measurement based on your sensor. There are some rough linear equations to convert that to a UV - Index. I didn’t get a lot of range in the response, and I’m not sure it is because it was connected directly to the ADC0834. The spec sheet recommends connecting it with a load resistor and OpAmp. The last thing I will say is be careful of which header pins you solder. The header pins that came with the sensor fit into the breadboard but are too small to connect to the jumper wires. Having the jumper wires is ideal so you can move the ML8511 around as the angle of incidence changes the value of the sensor.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/UVSensorML8511_ADC0834.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
+<div class="row" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 15px;">
+    <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/103kHqYsa0DXhXaOJcuZocpT5Z48zjzc8" id="UVSensorML8511_ADC0834">
+        <img src="https://lh3.googleusercontent.com/d/103kHqYsa0DXhXaOJcuZocpT5Z48zjzc8=s600" />
+    </a>
 </div>
 <div class="caption">
     Circuit Diagram for the UV Sensor
 </div>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/ML8511_UVSensor_CircuitActual_1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/ML8511_UVSensor_CircuitActual_2.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>    
+<div class="row" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 15px;">
+    <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1AzhnrwF_uv6tD1MAxyr7Lpci5zwHFo-e" id="ML8511_UVSensor_CircuitActual_1">
+        <img src="https://lh3.googleusercontent.com/d/1AzhnrwF_uv6tD1MAxyr7Lpci5zwHFo-e=s400" />
+    </a>
+    <a class="venobox" data-gall="myGallery" href="https://lh3.googleusercontent.com/d/1xpNTZpw54d0o5TRzOsg-5-6KMUaqeDu-" id="ML8511_UVSensor_CircuitActual_2">
+        <img src="https://lh3.googleusercontent.com/d/1xpNTZpw54d0o5TRzOsg-5-6KMUaqeDu-=s400" />
+    </a>
 </div>
 <div class="caption">
     Actual Completed Circuit of the UV Sensor

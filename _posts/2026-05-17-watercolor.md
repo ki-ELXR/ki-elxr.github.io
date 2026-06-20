@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Watercolor emulations
+title: Watercolor Emulations
 date: 2026-05-17 09:30:00
 description: Implementing KYND's watercolor emulation in openframeworks.
 tags: c++ webgl art graphics openframeworks
@@ -17,7 +17,7 @@ giscus_comments: true
     Watercolor Emulation
 </div>
 
-Ending
+There is something about KYND's pieces that evoke a certain feeling in me that many other creative coders don't. I think that is because he was a classically trained painter first, then coder. I wanted to emulate his style and fortunately for me, he has a wealth of tutorials utilizing code as an artistic medium. Here is one of them, which uses a force map shader to emulate a watercolor effect digitally.
 
 ## References
 

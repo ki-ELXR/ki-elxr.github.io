@@ -24,7 +24,6 @@ In Japan, the passage of time is felt strongly with each season as weather shift
  Some days in Miyazaki prefecture, the fog around Kirishima mountain thickens and is intersparsed with the sunny days of sakura flowers blooming. The fog feels thick, foreboding, uncertain...liminal. The transition between ending of a chapter and the beginning of new one is clear...what's not so clear is what comes after...like the Kirishima fog.
 
 
-## References
 
 <!-- - <a href="https://googlecreativelab.github.io/posenet-sketchbook/" style="color:var(--global-theme-color)">Maya Man's PoseNet Dance Artwork</a> -->
   
