@@ -27,7 +27,7 @@ I remember obsessively reading about creating these Islamic patterns on the trai
 The Coding Train did a wonderful video tutorial on how to implement Craig Kaplan's research in Javascript. This is an implementation of their work; here I reimplemented it in C++ and WebGL/WebAssembly. It was not trivial; it was an interesting exercise to reinvent p5's line draw calls in native C++.
 
 <div class="l-page">
-  <iframe src="{{ '/assets/em/em-shaderexample/index.html' | relative_url }}" frameborder='0' scrolling='no' height="500px" width="100%" style="border: 1px dashed grey;"></iframe>
+  <iframe src="{{ '/assets/em/em-watercolorEmulation/index.html' | relative_url }}" frameborder='0' scrolling='no' height="500px" width="100%" style="border: 1px dashed grey;"></iframe>
 </div>
 <div class="caption">
     Watercolor Emulation
