@@ -1,4 +1,7 @@
 
+// Configure Module before index.js loads
+var Module = Module || {};
+
 document.addEventListener('DOMContentLoaded', () => {
   console.log('DOM fully loaded and parsed');
   const canvas = document.getElementById('canvas');
@@ -43,6 +46,15 @@ document.addEventListener('DOMContentLoaded', () => {
   var spinnerElement = document.getElementById("spinner");
 
   var Module = {
+    locateFile: function(path) {
+      if (path.endsWith('.wasm') || path.endsWith('.wasm.map')) {
+        var scripts = document.getElementsByTagName('script');
+        var currentScript = scripts[scripts.length - 1];
+        var baseDir = currentScript.src.substring(0, currentScript.src.lastIndexOf('/')) + '/';
+        return baseDir + path;
+      }
+      return path;
+    },
     print: (function () {
       var element = document.getElementById("output");
       if (element) element.value = ""; // clear browser cache
