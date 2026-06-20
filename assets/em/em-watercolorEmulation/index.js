@@ -46,7 +46,7 @@ if (ENVIRONMENT_IS_NODE) {
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: C:\Users\ellix\AppData\Local\Temp\tmp8fa2dxhf.js
+// include: C:\Users\ellix\AppData\Local\Temp\tmpt48swa6a.js
 Module["expectedDataFileDownloads"] ??= 0;
 
 Module["expectedDataFileDownloads"]++;
@@ -147,7 +147,6 @@ Module["expectedDataFileDownloads"]++;
         if (!check) throw msg + (new Error).stack;
       }
       Module["FS_createPath"]("/", "data", true, true);
-      Module["FS_createPath"]("/data", "shadersGL", true, true);
       Module["FS_createPath"]("/data", "shadersGLES", true, true);
       /** @constructor */ function DataRequest(start, end, audio) {
         this.start = start;
@@ -211,47 +210,27 @@ Module["expectedDataFileDownloads"]++;
   }
   loadPackage({
     "files": [ {
-      "filename": "/data/shadersGL/forcemapShader copy.frag",
-      "start": 0,
-      "end": 2921
-    }, {
-      "filename": "/data/shadersGL/forcemapShader.frag",
-      "start": 2921,
-      "end": 5840
-    }, {
-      "filename": "/data/shadersGL/forcemapShader.vert",
-      "start": 5840,
-      "end": 6052
-    }, {
-      "filename": "/data/shadersGL/shader.frag",
-      "start": 6052,
-      "end": 6933
-    }, {
-      "filename": "/data/shadersGL/shader.vert",
-      "start": 6933,
-      "end": 7256
-    }, {
       "filename": "/data/shadersGLES/forcemapShader.frag",
-      "start": 7256,
-      "end": 10195
+      "start": 0,
+      "end": 2939
     }, {
       "filename": "/data/shadersGLES/forcemapShader.vert",
-      "start": 10195,
-      "end": 10429
+      "start": 2939,
+      "end": 3173
     }, {
       "filename": "/data/shadersGLES/shader.frag",
-      "start": 10429,
-      "end": 11360
+      "start": 3173,
+      "end": 4104
     }, {
       "filename": "/data/shadersGLES/shader.vert",
-      "start": 11360,
-      "end": 11679
+      "start": 4104,
+      "end": 4423
     } ],
-    "remote_package_size": 11679
+    "remote_package_size": 4423
   });
 })();
 
-// end include: C:\Users\ellix\AppData\Local\Temp\tmp8fa2dxhf.js
+// end include: C:\Users\ellix\AppData\Local\Temp\tmpt48swa6a.js
 var arguments_ = [];
 
 var thisProgram = "./this.program";
