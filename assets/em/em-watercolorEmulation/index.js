@@ -46,7 +46,7 @@ if (ENVIRONMENT_IS_NODE) {
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: C:\Users\ellix\AppData\Local\Temp\tmp1tqjwquc.js
+// include: C:\Users\ellix\AppData\Local\Temp\tmp6zagj6zr.js
 Module["expectedDataFileDownloads"] ??= 0;
 
 Module["expectedDataFileDownloads"]++;
@@ -146,8 +146,7 @@ Module["expectedDataFileDownloads"]++;
       function assert(check, msg) {
         if (!check) throw msg + (new Error).stack;
       }
-      Module["FS_createPath"]("/", "data", true, true);
-      Module["FS_createPath"]("/data", "shadersGLES", true, true);
+      Module["FS_createPath"]("/", "shadersGLES", true, true);
       /** @constructor */ function DataRequest(start, end, audio) {
         this.start = start;
         this.end = end;
@@ -210,19 +209,19 @@ Module["expectedDataFileDownloads"]++;
   }
   loadPackage({
     "files": [ {
-      "filename": "/data/shadersGLES/forcemapShader.frag",
+      "filename": "/shadersGLES/forcemapShader.frag",
       "start": 0,
       "end": 2939
     }, {
-      "filename": "/data/shadersGLES/forcemapShader.vert",
+      "filename": "/shadersGLES/forcemapShader.vert",
       "start": 2939,
       "end": 3173
     }, {
-      "filename": "/data/shadersGLES/shader.frag",
+      "filename": "/shadersGLES/shader.frag",
       "start": 3173,
       "end": 4104
     }, {
-      "filename": "/data/shadersGLES/shader.vert",
+      "filename": "/shadersGLES/shader.vert",
       "start": 4104,
       "end": 4423
     } ],
@@ -230,7 +229,7 @@ Module["expectedDataFileDownloads"]++;
   });
 })();
 
-// end include: C:\Users\ellix\AppData\Local\Temp\tmp1tqjwquc.js
+// end include: C:\Users\ellix\AppData\Local\Temp\tmp6zagj6zr.js
 var arguments_ = [];
 
 var thisProgram = "./this.program";
