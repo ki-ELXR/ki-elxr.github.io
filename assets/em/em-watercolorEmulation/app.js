@@ -1,7 +1,4 @@
 
-// Configure Module before index.js loads
-var Module = Module || {};
-
 document.addEventListener('DOMContentLoaded', () => {
   console.log('DOM fully loaded and parsed');
   const canvas = document.getElementById('canvas');
@@ -45,71 +42,64 @@ document.addEventListener('DOMContentLoaded', () => {
   var progressElement = document.getElementById("progress");
   var spinnerElement = document.getElementById("spinner");
 
-  var Module = {
-    locateFile: function(path) {
-      if (path.endsWith('.wasm') || path.endsWith('.wasm.map')) {
-        var scripts = document.getElementsByTagName('script');
-        var currentScript = scripts[scripts.length - 1];
-        var baseDir = currentScript.src.substring(0, currentScript.src.lastIndexOf('/')) + '/';
-        return baseDir + path;
+  // Extend the existing Module object instead of redefining it
+  Module.print = (function () {
+    var element = document.getElementById("output");
+    if (element) element.value = ""; // clear browser cache
+    return (...args) => {
+      var text = args.join(" ");
+      console.log(text);
+      if (element) {
+        element.value += text + "\n";
+        element.scrollTop = element.scrollHeight; // focus on bottom
       }
-      return path;
-    },
-    print: (function () {
-      var element = document.getElementById("output");
-      if (element) element.value = ""; // clear browser cache
-      return (...args) => {
-        var text = args.join(" ");
-        console.log(text);
-        if (element) {
-          element.value += text + "\n";
-          element.scrollTop = element.scrollHeight; // focus on bottom
-        }
-      };
-    })(),
-    canvas: (() => {
-      var canvas = document.getElementById("canvas");
-      canvas.addEventListener(
-        "webglcontextlost",
-        (e) => {
-          alert("WebGL context lost. You will need to reload the page.");
-          e.preventDefault();
-        },
-        false
-      );
-      return canvas;
-    })(),
-    setStatus: (text) => {
-      Module.setStatus.last ??= { time: Date.now(), text: "" };
-      if (text === Module.setStatus.last.text) return;
-      var m = text.match(/([^(]+)\((\d+(\.\d+)?)\/(\d+)\)/);
-      var now = Date.now();
-      if (m && now - Module.setStatus.last.time < 30) return; // if this is a progress update, skip it if too soon
-      Module.setStatus.last.time = now;
-      Module.setStatus.last.text = text;
-      if (m) {
-        text = m[1];
-        progressElement.value = parseInt(m[2]) * 100;
-        progressElement.max = parseInt(m[4]) * 100;
-        progressElement.hidden = false;
-        spinnerElement.hidden = false;
-      } else {
-        progressElement.value = null;
-        progressElement.max = null;
-        progressElement.hidden = true;
-        if (!text) spinnerElement.style.display = "none";
-      }
-      statusElement.innerHTML = text;
-    },
-    totalDependencies: 0,
-    monitorRunDependencies: (left) => {
-      this.totalDependencies = Math.max(this.totalDependencies, left);
-      Module.setStatus(
-        left
-          ? `Preparing... (${this.totalDependencies - left}/${this.totalDependencies})`
-          : "All downloads complete."
-      );
-    },
+    };
+  })();
+  
+  Module.canvas = (() => {
+    var canvas = document.getElementById("canvas");
+    canvas.addEventListener(
+      "webglcontextlost",
+      (e) => {
+        alert("WebGL context lost. You will need to reload the page.");
+        e.preventDefault();
+      },
+      false
+    );
+    return canvas;
+  })();
+  
+  Module.setStatus = (text) => {
+    Module.setStatus.last ??= { time: Date.now(), text: "" };
+    if (text === Module.setStatus.last.text) return;
+    var m = text.match(/([^(]+)\((\d+(\.\d+)?)\/(\d+)\)/);
+    var now = Date.now();
+    if (m && now - Module.setStatus.last.time < 30) return; // if this is a progress update, skip it if too soon
+    Module.setStatus.last.time = now;
+    Module.setStatus.last.text = text;
+    if (m) {
+      text = m[1];
+      progressElement.value = parseInt(m[2]) * 100;
+      progressElement.max = parseInt(m[4]) * 100;
+      progressElement.hidden = false;
+      spinnerElement.hidden = false;
+    } else {
+      progressElement.value = null;
+      progressElement.max = null;
+      progressElement.hidden = true;
+      if (!text) spinnerElement.style.display = "none";
+    }
+    statusElement.innerHTML = text;
+  };
+  
+  Module.totalDependencies = 0;
+  Module.monitorRunDependencies = (left) => {
+    Module.totalDependencies = Math.max(Module.totalDependencies, left);
+    Module.setStatus(
+      left
+        ? `Preparing... (${Module.totalDependencies - left}/${Module.totalDependencies})`
+        : "All downloads complete."
+    );
   };
 
   Module.setStatus("Downloading...");
