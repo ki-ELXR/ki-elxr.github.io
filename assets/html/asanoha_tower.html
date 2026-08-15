@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Canvas Only</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        overflow: hidden;
+      }
+
+      canvas.emscripten {
+        border: 0 none;
+        background-color: #000;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas
+      class="emscripten"
+      id="canvas"
+      oncontextmenu="event.preventDefault()"
+      tabindex="-1"
+    ></canvas>
+
+    <script>
+      var canvasElement = document.getElementById("canvas");
+
+      canvasElement.addEventListener(
+        "webglcontextlost",
+        (e) => {
+          alert("WebGL context lost. You will need to reload the page.");
+          e.preventDefault();
+        },
+        false,
+      );
+
+      var Module = {
+        canvas: canvasElement,
+        print(...args) {
+          console.log(...args);
+        },
+        printErr(...args) {
+          console.error(...args);
+        },
+        setStatus(text) {
+          // Silently log status changes to console instead of rendering on screen
+          if (text) console.log("[Emscripten Status]", text);
+        },
+      };
+    </script>
+
+    <script async src="/assets/js/asanoha_tower.js"></script>
+  </body>
+</html>

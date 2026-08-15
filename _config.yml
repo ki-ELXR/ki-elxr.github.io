@@ -128,7 +128,7 @@ blog_name: ELXR # blog_name will be displayed in your blog page
 blog_description: Creative Coder
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
-
+future: true # enable future blog posts (needed due to tiemzone differences)
 # Pagination
 pagination:
   enabled: true
